@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechXcellence</title>
+    <link rel="icon" type="image/png" href="logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo-container">
+                <img src="logo2.png" alt="TechXcellence Logo">
+                <span>TechXcellence</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-phone-alt" style="margin-right: 8px;"></i> Office: +8801796-172853</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page-hero">
+            <div class="container contact-page-hero-grid">
+                <div class="contact-page-intro">
+                    <span class="section-tag">Start a conversation</span>
+                    <h1>Tell us what you want to build.</h1>
+                    <p>Share a few details about your goals and our Bangladesh-based team will get back to you with practical next steps.</p>
+                    <div class="contact-page-details">
+                        <a href="tel:+8801796172853"><i class="fas fa-phone"></i><span><strong>Call our team</strong>+8801796-172853</span></a>
+                        <a href="mailto:admin@techxcellence.com"><i class="fas fa-envelope"></i><span><strong>Email us</strong>admin@techxcellence.com</span></a>
+                        <div><i class="fas fa-location-dot"></i><span><strong>Based in</strong>Bangladesh, serving nationwide</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <div class="contact-form-heading">
+                        <span class="section-tag">Project enquiry</span>
+                        <h2>How can we help?</h2>
+                        <p>Complete the form and tell us what your organization needs.</p>
+                    </div>
+                    <form class="contact-form" action="mailto:admin@techxcellence.com" method="post" enctype="text/plain">
+                        <div class="form-row">
+                            <label for="full-name">Full name <span>*</span></label>
+                            <input id="full-name" name="Full name" type="text" placeholder="Your name" autocomplete="name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email address <span>*</span></label>
+                            <input id="email" name="Email" type="email" placeholder="you@company.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-row form-row-half">
+                            <div>
+                                <label for="phone">Phone number</label>
+                                <input id="phone" name="Phone" type="tel" placeholder="+880..." autocomplete="tel">
+                            </div>
+                            <div>
+                                <label for="service">What do you need?</label>
+                                <select id="service" name="Service">
+                                    <option value="">Select a service</option>
+                                    <option>Web & software</option>
+                                    <option>IT support</option>
+                                    <option>Cloud solutions</option>
+                                    <option>Business automation</option>
+                                    <option>Something else</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Tell us about your project <span>*</span></label>
+                            <textarea id="message" name="Message" rows="5" placeholder="What are you hoping to improve?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send enquiry <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-cta">
+                <div>
+                    <span class="section-tag">Let’s work together</span>
+                    <h3>Need a dependable technology partner?</h3>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechXcellence. All rights reserved.</p>
+                <p>Built for modern digital growth.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
