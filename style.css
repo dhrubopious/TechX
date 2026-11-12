@@ -1274,6 +1274,15 @@ footer::before {
     border: 1px solid rgba(191, 219, 254, 0.14);
 }
 
+.contact-footer-cta > div {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-footer-cta .section-tag {
+    margin: 1.5rem 0 0;
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -1635,20 +1644,6 @@ footer::before {
                 linear-gradient(135deg, #081121 0%, #111d38 52%, #1c1740 100%);
 }
 
-.contact-page-hero::before {
-    content: "";
-    position: absolute;
-    width: min(44vw, 560px);
-    aspect-ratio: 1;
-    top: 50%;
-    right: -10%;
-    transform: translateY(-50%);
-    background: url('logo2.png') center / contain no-repeat;
-    opacity: 0.07;
-    filter: grayscale(1) brightness(2) drop-shadow(0 0 35px rgba(96, 165, 250, 0.35));
-    pointer-events: none;
-}
-
 .contact-page-hero-grid {
     position: relative;
     z-index: 1;
@@ -1721,6 +1716,9 @@ footer::before {
 }
 
 .contact-form-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     padding: clamp(1.4rem, 4vw, 2.5rem);
     border: 1px solid rgba(191, 219, 254, 0.2);
     border-radius: 26px;
@@ -1728,6 +1726,25 @@ footer::before {
     box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
+}
+
+.contact-form-logo {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: min(70%, 320px);
+    aspect-ratio: 1;
+    background: url('logo2.png') center / contain no-repeat;
+    opacity: 0.07;
+    filter: grayscale(1) brightness(1.8) drop-shadow(0 0 24px rgba(96, 165, 250, 0.3));
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.contact-form-card > :not(.contact-form-logo) {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-form-heading h2 {
@@ -1824,10 +1841,6 @@ footer::before {
         max-width: 680px;
     }
 
-    .contact-page-hero::before {
-        right: -18%;
-        top: 24%;
-    }
 }
 
 @media (max-width: 600px) {

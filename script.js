@@ -92,6 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
     handleParallax();
     window.addEventListener('scroll', handleParallax, { passive: true });
 
+    const contactFormCard = document.querySelector('.contact-form-card');
+    if (contactFormCard) {
+        const logo = document.createElement('div');
+        logo.className = 'contact-form-logo';
+        logo.setAttribute('aria-hidden', 'true');
+        contactFormCard.prepend(logo);
+
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            logo.animate([
+                { transform: 'translate(-50%, -50%) translate(-14px, 8px) rotate(-8deg)' },
+                { transform: 'translate(-50%, -50%) translate(14px, -8px) rotate(3deg)' }
+            ], {
+                duration: 10000,
+                iterations: Infinity,
+                direction: 'alternate',
+                easing: 'ease-in-out'
+            });
+        }
+    }
+
     // Resize update for menu state
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768 && nav) {
