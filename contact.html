@@ -41,7 +41,7 @@
                     <div class="contact-page-details">
                         <a href="tel:+8801302001155"><i class="fas fa-phone"></i><span><strong>Call our team</strong>+8801302001155</span></a>
                         <a href="mailto:admin@techxcellence.com"><i class="fas fa-envelope"></i><span><strong>Email us</strong>admin@techxcellence.com</span></a>
-                        <div><i class="fas fa-location-dot"></i><span><strong>Based in</strong>Bangladesh, serving nationwide</span></div>
+                        <div><i class="fas fa-location-dot"></i><span><strong>Based in</strong>Bangladesh, serving worldwide</span></div>
                     </div>
                 </div>
 
@@ -51,23 +51,24 @@
                         <h2>How can we help?</h2>
                         <p>Complete the form and tell us what your organization needs.</p>
                     </div>
-                    <form class="contact-form" action="mailto:admin@techxcellence.com" method="post" enctype="text/plain">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="4bc72fc3-5a6e-4457-8b3c-c2501ea0e41f">
                         <div class="form-row">
                             <label for="full-name">Full name <span>*</span></label>
-                            <input id="full-name" name="Full name" type="text" placeholder="Your name" autocomplete="name" required>
+                            <input id="full-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
                         </div>
                         <div class="form-row">
                             <label for="email">Email address <span>*</span></label>
-                            <input id="email" name="Email" type="email" placeholder="you@company.com" autocomplete="email" required>
+                            <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
                         </div>
                         <div class="form-row form-row-half">
                             <div>
                                 <label for="phone">Phone number</label>
-                                <input id="phone" name="Phone" type="tel" placeholder="+880..." autocomplete="tel">
+                                <input id="phone" name="phone" type="tel" placeholder="+880..." autocomplete="tel">
                             </div>
                             <div>
                                 <label for="service">What do you need?</label>
-                                <select id="service" name="Service">
+                                <select id="service" name="service">
                                     <option value="">Select a service</option>
                                     <option>Web & software</option>
                                     <option>IT support</option>
@@ -78,8 +79,8 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <label for="message">Tell us about your project <span>*</span></label>
-                            <textarea id="message" name="Message" rows="5" placeholder="What are you hoping to improve?" required></textarea>
+                            <label for="message">Tell us about your topic <span>*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="What are you hoping to improve?" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send enquiry <i class="fas fa-arrow-right"></i></button>
                     </form>
