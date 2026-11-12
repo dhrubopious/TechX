@@ -756,6 +756,47 @@ nav a.active::after {
     animation: glowPulse 5s ease-in-out infinite;
 }
 
+.services-coverage-card {
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    background: linear-gradient(145deg, rgba(96, 165, 250, 0.16), rgba(15, 23, 42, 0.52));
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.32);
+    text-align: center;
+}
+
+.services-coverage-card i {
+    color: #bfdbfe;
+    font-size: 4rem;
+    filter: drop-shadow(0 0 24px rgba(96, 165, 250, 0.45));
+}
+
+.services-coverage-card span {
+    color: #dbeafe;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.services-coverage-card h2 {
+    color: white;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 0;
+}
+
+.services-coverage-card p {
+    max-width: 340px;
+    color: rgba(226, 232, 240, 0.9);
+    margin: 0;
+}
+
 .about-page-image:hover {
     transform: scale(1.02) translateY(-6px);
     box-shadow: 0 38px 72px rgba(59, 130, 246, 0.22);
@@ -1591,6 +1632,10 @@ footer::before {
 
     .about-page-hero {
         padding: 4rem 0;
+    }
+
+    .services-coverage-card {
+        min-height: 300px;
     }
 
     .about-page-hero h1 {
