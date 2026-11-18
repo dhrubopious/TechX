@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Reveal animations on scroll
-    const revealElements = document.querySelectorAll('.reveal, .feature-card, .news-card, .testimonial-card, .about-badge, .leader-card, .value-item, .stat-item, .hero-content, .hero-contact-card, .about-page-content, .about-page-image');
+    const revealElements = document.querySelectorAll('.reveal, .feature-card, .news-card, .testimonial-card, .about-badge, .leader-card, .value-item, .stat-item, .hero-content, .hero-contact-card, .about-page-content, .about-page-image, .services-hero-panel');
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollY = window.scrollY;
 
         heroSections.forEach((section) => {
-            const content = section.querySelector('.hero-content, .about-page-content');
-            const card = section.querySelector('.hero-contact-card, .about-page-image');
+            const content = section.querySelector('.hero-content, .about-page-content, .services-hero-copy');
+            const card = section.querySelector('.hero-contact-card, .about-page-image, .services-hero-panel');
 
             if (!content || !card) return;
 
